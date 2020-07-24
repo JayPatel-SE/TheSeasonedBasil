@@ -1,58 +1,75 @@
 :root {
-  /*--jumbotron-padding-y: 3rem;*/
+    /*--jumbotron-padding-y: 3rem;*/
 }
 
 .jumbotron {
-  /*padding-top: var(--jumbotron-padding-y);
+    /*padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);*/
-  margin-bottom: 0;
-  background-color: #AFA7A7;
-  max-height: 25rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    max-height: 25rem;
 }
+
 @media (min-width: 768px) {
-  .jumbotron {
-    padding-top: calc(var(--jumbotron-padding-y) * 2);
-    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-  }
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
 }
 
 .jumbotron p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .jumbotron-heading {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 .jumbotron .container {
-  /*max-width: 40rem;*/
+    /*max-width: 40rem;*/
 }
-.cover{
-  max-height: 25rem;
+
+.album {
+    background-color: #3C4858;
+}
+
+.cover {
+    max-height: 25rem;
+}
+
+.card {
+    border-radius: 2em;
+    box-shadow: 2px 2px 2px 2px black;
 }
 
 footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
     color: #343a40;
     background-color: black;
 }
 
 footer p {
-  margin-bottom: .25rem;
+    margin-bottom: .25rem;
 }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
 
 /*NAV*/
-.logo{
+
+.logo {
     margin-left: 0.7em;
 }
+
 .navbar {
     padding: 10px;
 }
-.nav-sub{
+
+.nav-sub {
     display: flex;
     list-style: none;
     font-size: 1.3em;
@@ -60,31 +77,49 @@ footer p {
     color: white;
 }
 
-.sticky{
+.sticky {
     position: fixed;
     top: 0%;
 }
 
-@media only screen and (max-width:600px){
-    .nav-sub{
-        font-size:0.8em;
-        padding:0;
+@media only screen and (max-width:600px) {
+    .nav-sub {
+        font-size: 0.8em;
+        padding: 0;
         border: 0px;
     }
 }
 
-.push{
+.push {
     margin-left: auto;
 }
 
-li{
+li {
     padding: 0px 20px 0px 20px;
     color: white;
     font-size: 1.1rem;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+}
+
+.card-thing{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.bottom{
+    padding-bottom: 0px;
+}
+
+.card-img-top{
+    margin-top: -60px;
+    border-radius: 2em;
+    width: 95%;
+    box-shadow: 2px 10px 29px -10px rgba(0,0,0,0.75);
+    /*margin-right: 10px;*/
+    margin-left: 8.3px;
 }
