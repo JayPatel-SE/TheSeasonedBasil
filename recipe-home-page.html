@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+
+    <!-- <FilesMatch "./fonts/Raleway/static/Raleway-Thin.ttf">
+        <IfModule mod_headers.c>
+            Header set Access-Control-Allow-Origin "*"
+        </IfModule>
+    </FilesMatch> -->
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -13,45 +21,23 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
     <!-- Custom styles for this template -->
     <link href="./css/recipe-home-page-style.css" rel="stylesheet">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <!-- <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-            <strong>Album</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div> -->
 
-
-        <nav class="navbar navbar-light bg-dark">
+        <nav class="navbar navbar-light">
             <img class="logo" src="./img/logo.png" width="25" height="25" alt="">
             <ul class="nav-sub">
                 <li><a href="index.html">Home</a></li>
@@ -64,163 +50,291 @@
     </header>
 
     <main role="main">
+        <!------------------------------------------------------------------------------------------>
 
         <section class="jumbotron text-center">
-            <img class="cover" src="./img/wider.jpg">
-            <!-- <div class="container">
-          <h1 class="jumbotron-heading">Album example</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
-        </div> -->
+            <img class="cover" src="./img/recipes.png">
         </section>
 
+        <!------------------------------------------------------------------------------------------>
+        <!-- _________________________________ NEW CATEGORY _____________________________________ -->
+        <!------------------------------------------------------------------------------------------>
         <div class="album py-5">
+            <!------------------------------>
+            <div class="col-md-4 full_width">
+                <div class="card mb-4 box-shadow category-heading">
+                    <div class="card-body category-text">
+                        <p class="card-text light-text">Category 1</p>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------>
             <div class="container">
 
                 <div class="row">
+                    <!------------------------------>
                     <div class="col-md-4 card-thing">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!------------------------------>
                     <div class="col-md-4 card-thing">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text">bottom</p>
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!------------------------------>
                     <div class="col-md-4 card-thing">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text">bottom</p>
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!------------------------------>
                     <div class="col-md-4 card-thing">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text">bottom</p>
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!------------------------------>
                     <div class="col-md-4 card-thing">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text">FOOOD</p>
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!------------------------------>
                     <div class="col-md-4 card-thing">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4 card-thing bottom">
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 card-thing bottom">
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 card-thing bottom">
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
                                     <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!------------------------------>
                 </div>
             </div>
         </div>
+        <!------------------------------------------------------------------------------------------>
+
+        <!-- _________________________________ NEW CATEGORY _____________________________________ -->
+
+        <!------------------------------------------------------------------------------------------>
+        <div class="album py-5">
+            <!------------------------------>
+            <div class="col-md-4 full_width">
+                <div class="card mb-4 box-shadow category-heading">
+                    <div class="card-body category-text">
+                        <p class="card-text light-text">Category 1</p>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------>
+            <div class="container">
+
+                <div class="row">
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------>
+                    <div class="col-md-4 card-thing">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="./img/basil.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">PIZZA</p>
+                                <p class="card-text-title">INFO</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------>
+
+
 
     </main>
 
