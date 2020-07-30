@@ -176,3 +176,7 @@ a {
     font-family: 'Raleway', sans-serif;
     font-size: 5rem;
 }
+
+.top-padding {
+    padding-top: 2em;
+}
